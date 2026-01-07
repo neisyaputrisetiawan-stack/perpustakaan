@@ -1,0 +1,34 @@
+START
+Deklarasi array buku
+Deklarasi array status pinjam
+
+DO
+    Tampilkan menu
+    Input pilihan
+
+    IF pilihan = 1 THEN
+        Tampilkan daftar buku dan status
+    ELSE IF pilihan = 2 THEN
+        Input nomor buku
+        IF buku tersedia THEN
+            Set status dipinjam
+        ELSE
+            Tampilkan pesan buku sudah dipinjam
+        ENDIF
+    ELSE IF pilihan = 3 THEN
+        Input nomor buku
+        IF buku sedang dipinjam THEN
+            Set status tersedia
+        ELSE
+            Tampilkan pesan buku belum dipinjam
+        ENDIF
+    ELSE IF pilihan = 4 THEN
+        STOP
+    ELSE
+        Tampilkan pesan pilihan tidak valid
+    ENDIF
+
+    Tanya kembali ke menu
+WHILE jawaban = 'y'
+
+END
